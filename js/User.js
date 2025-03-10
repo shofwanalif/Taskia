@@ -1,3 +1,5 @@
+// Model for user data
+
 class User {
   constructor() {
     this.users = this.getUsers() || [];

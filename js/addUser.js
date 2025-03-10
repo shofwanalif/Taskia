@@ -1,3 +1,5 @@
+// Controller add user
+
 document.addEventListener('DOMContentLoaded', () => {
   const userForm = document.getElementById('userForm');
   const userManager = new User();

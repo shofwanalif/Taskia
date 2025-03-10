@@ -1,3 +1,5 @@
+// Controller signIn
+
 document.addEventListener('DOMContentLoaded', () => {
   const userForm = document.getElementById('userForm');
   const userManager = new User();
@@ -10,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = userManager.sigInUser(usernameByInput);
     if (result.success) {
       alert('login successful');
+      localStorage.setItem('usernameLogedIn', usernameByInput);
       return (window.location.href = '../tasks.html');
     } else {
       alert('Failed to login');
