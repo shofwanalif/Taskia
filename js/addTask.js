@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const result = taskManager.saveTask(taskData);
     if (result.success) {
-      //   return (window.location.href = '../signin.html');
+      return (window.location.href = '../tasks.html');
       alert('Task added successfully');
     } else {
       alert('Failed to add user');
